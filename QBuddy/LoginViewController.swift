@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     var logoLabel: UILabel!
-    var logoImageView: UIImageView!
+//    var logoImageView: UIImageView!
     var loginLabel: UILabel!
     var emailField: UITextField!
     var passwordField: UITextField!
@@ -27,17 +27,17 @@ class LoginViewController: UIViewController {
         logoLabel = UILabel()
         logoLabel.text = "QBuddy"
         logoLabel.textColor = UIColor.darkBlueColor()
-        logoLabel.font = UIFont.systemFont(ofSize: 26) //todo: set font
+        logoLabel.font = UIFont(name: "Roboto", size: 30)
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoLabel)
         
-        logoImageView = UIImageView()
-        view.addSubview(logoImageView)
+//        logoImageView = UIImageView()
+//        view.addSubview(logoImageView)
         
         loginLabel = UILabel()
         loginLabel.text = "Login"
-        loginLabel.textColor = .black
-        loginLabel.font = UIFont.systemFont(ofSize: 16)
+        loginLabel.textColor = UIColor.mainGrayColor()
+        loginLabel.font = UIFont(name: "Roboto", size: 24)
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginLabel)
         
@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
         emailField.backgroundColor = .white
         emailField.clearsOnBeginEditing = false
         emailField.borderStyle = .roundedRect
+        emailField.frame.size.width = 300
         emailField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(emailField)
         
@@ -54,31 +55,63 @@ class LoginViewController: UIViewController {
         passwordField.backgroundColor = .white
         passwordField.clearsOnBeginEditing = false
         passwordField.borderStyle = .roundedRect
+        passwordField.frame.size.width = 300
         passwordField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(passwordField)
         
         loginButton = UIButton()
-        loginButton.setTitle("Login", for:.normal)
-        loginButton.setTitleColor(.white, for: .normal)
+//        loginButton.setTitle("Login", for:.normal)
+        loginButton.titleLabel?.font = UIFont(name: "Roboto", size: 16)
+        loginButton.setTitleColor(UIColor.lightGrayColor(), for: .normal)
+        loginButton.layer.backgroundColor = UIColor.darkBlueColor().cgColor
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginButton)
         
         orLabel = UILabel()
         orLabel.text = "OR"
+        orLabel.textColor = UIColor.mainGrayColor()
+        orLabel.font = UIFont(name: "Roboto", size: 14)
         orLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(orLabel)
         
         signUpLabel = UILabel()
         signUpLabel.text = "sign up"
+        signUpLabel.textColor = UIColor.mainGrayColor()
+        signUpLabel.font = UIFont(name: "Roboto", size: 14)
         signUpLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(signUpLabel)
         
+        setupConstraints()
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            logoLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24),
-            logoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            logoLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32),
+            logoLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32)
+            ])
+        NSLayoutConstraint.activate([
+            loginLabel.topAnchor.constraint(equalTo: logoLabel.bottomAnchor, constant: 128),
+            loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ])
+        NSLayoutConstraint.activate([
+            emailField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 24),
+            emailField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ])
+        NSLayoutConstraint.activate([
+            passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 16),
+            passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ])
+        NSLayoutConstraint.activate([
+            loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 128),
+            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ])
+        NSLayoutConstraint.activate([
+            orLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 52),
+            orLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            ])
+        NSLayoutConstraint.activate([
+            signUpLabel.bottomAnchor.constraint(equalTo: orLabel.bottomAnchor, constant: 52),
+            signUpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
 
