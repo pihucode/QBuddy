@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CE0F9A25201B2C007A1EEE /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE0F9925201B2C007A1EEE /* InterestViewController.swift */; };
+		18CE0F9C25201FAF007A1EEE /* GlobalColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */; };
 		18D0A674251FCE8B00D0A079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A673251FCE8B00D0A079 /* AppDelegate.swift */; };
-		18D0A676251FCE8B00D0A079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A675251FCE8B00D0A079 /* ViewController.swift */; };
+		18D0A676251FCE8B00D0A079 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A675251FCE8B00D0A079 /* LoginViewController.swift */; };
 		18D0A67B251FCECC00D0A079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D0A67A251FCECC00D0A079 /* Assets.xcassets */; };
 		18D0A67E251FCECC00D0A079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0A67C251FCECC00D0A079 /* LaunchScreen.storyboard */; };
 		18D0A689251FCECD00D0A079 /* QBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A688251FCECD00D0A079 /* QBuddyTests.swift */; };
@@ -33,9 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18CE0F9925201B2C007A1EEE /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalColors.swift; sourceTree = "<group>"; };
 		18D0A670251FCE8B00D0A079 /* QBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0A673251FCE8B00D0A079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D0A675251FCE8B00D0A079 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D0A675251FCE8B00D0A079 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18D0A67A251FCECC00D0A079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D0A67D251FCECC00D0A079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D0A67F251FCECC00D0A079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				18D0A673251FCE8B00D0A079 /* AppDelegate.swift */,
-				18D0A675251FCE8B00D0A079 /* ViewController.swift */,
+				18D0A675251FCE8B00D0A079 /* LoginViewController.swift */,
 				18D0A67A251FCECC00D0A079 /* Assets.xcassets */,
 				18D0A67C251FCECC00D0A079 /* LaunchScreen.storyboard */,
 				18D0A67F251FCECC00D0A079 /* Info.plist */,
+				18CE0F9925201B2C007A1EEE /* InterestViewController.swift */,
+				18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */,
 			);
 			path = QBuddy;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D0A676251FCE8B00D0A079 /* ViewController.swift in Sources */,
+				18CE0F9C25201FAF007A1EEE /* GlobalColors.swift in Sources */,
+				18CE0F9A25201B2C007A1EEE /* InterestViewController.swift in Sources */,
+				18D0A676251FCE8B00D0A079 /* LoginViewController.swift in Sources */,
 				18D0A674251FCE8B00D0A079 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

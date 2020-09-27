@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     var logoLabel: UILabel!
     var logoImageView: UIImageView!
@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = UIColor(red:255/255, green:234/255, blue:219/255, alpha:1.0) //#FFEADB
+        view.backgroundColor = UIColor.beigeColor()
         
         logoLabel = UILabel()
         logoLabel.text = "QBuddy"
-        logoLabel.textColor = UIColor(red:115/255, green:125/255, blue:254/255, alpha: 1.0)
+        logoLabel.textColor = UIColor.darkBlueColor()
         logoLabel.font = UIFont.systemFont(ofSize: 26) //todo: set font
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoLabel)
@@ -36,13 +36,13 @@ class ViewController: UIViewController {
         
         loginLabel = UILabel()
         loginLabel.text = "Login"
-        loginLabel.textColor = UIColor(red:115/255, green:125/255, blue:254/255, alpha: 1.0)
+        loginLabel.textColor = .black
         loginLabel.font = UIFont.systemFont(ofSize: 16)
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginLabel)
         
         emailField = UITextField()
-//        emailField.text
+        emailField.placeholder = "Email"
         emailField.backgroundColor = .white
         emailField.clearsOnBeginEditing = false
         emailField.borderStyle = .roundedRect
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         view.addSubview(emailField)
         
         passwordField = UITextField()
-        //        passwordField
+        passwordField.placeholder = "Password"
         passwordField.backgroundColor = .white
         passwordField.clearsOnBeginEditing = false
         passwordField.borderStyle = .roundedRect
