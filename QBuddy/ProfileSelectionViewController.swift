@@ -16,14 +16,16 @@ class ProfileSelectionViewController: UIViewController{
         setUpSubviews()
     }
     func setUpSubviews(){
+        self.view.backgroundColor = UIColor.beigeColor()
         titleLabel.text = "Choose your profile picture here!"
+        titleLabel.numberOfLines = 0
         titleLabel.textColor = UIColor.darkBlueColor()
         titleLabel.font = UIFont(name: "Roboto", size: 30)
         titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
         self.view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints{(make) in
             make.left.equalTo(self.view).offset(22)
-            make.right.equalTo(self.view).offset(-45)
+            make.top.equalTo(self.view).offset(45)
             make.height.equalTo(85)
             make.width.equalTo(290)
         }
@@ -40,7 +42,7 @@ class ProfileSelectionViewController: UIViewController{
         let redd = UIButton(type: .custom)
         redd.setImage(UIImage(named:"Redd.png"), for: .normal)
         let moneyBag = UIButton(type: .custom)
-        moneyBag.setImage(UIImage(named:"Money Bag.png"), for: .normal)
+        moneyBag.setImage(UIImage(named:"Money bag.png"), for: .normal)
         let kkSlider = UIButton(type: .custom)
         kkSlider.setImage(UIImage(named:"KK Slider.png"), for: .normal)
         let buttonsArray: [UIButton] = [tomNook, blathers, isabelle, peach, pear, redd, moneyBag, kkSlider]
@@ -57,46 +59,46 @@ class ProfileSelectionViewController: UIViewController{
             case tomNook:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
-                    make.top.equalTo(self.view).offset(-175)
+                    make.top.equalTo(self.view).offset(175)
                 }
                 break
             case blathers:
             button.snp.makeConstraints{(make) in
                 make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(-175)
+                make.top.equalTo(self.view).offset(175)
             }
             case isabelle:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
-                    make.top.equalTo(self.view).offset(-323)
+                    make.top.equalTo(self.view).offset(323)
                 }
                 break
             case peach:
             button.snp.makeConstraints{(make) in
                 make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(-323)
+                make.top.equalTo(self.view).offset(323)
             }
             case pear:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
-                    make.top.equalTo(self.view).offset(-466)
+                    make.top.equalTo(self.view).offset(466)
                 }
                 break
             case redd:
             button.snp.makeConstraints{(make) in
                 make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(-466)
+                make.top.equalTo(self.view).offset(466)
             }
             case moneyBag:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
-                    make.top.equalTo(self.view).offset(-613)
+                    make.top.equalTo(self.view).offset(613)
                 }
                 break
             case kkSlider:
             button.snp.makeConstraints{(make) in
                 make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(-613)
+                make.top.equalTo(self.view).offset(613)
             }
             break
             default:

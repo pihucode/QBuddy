@@ -65,6 +65,7 @@ class LoginViewController: UIViewController {
         loginButton.setTitleColor(UIColor.lightGrayColor(), for: .normal)
         loginButton.layer.backgroundColor = UIColor.darkBlueColor().cgColor
         loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
         view.addSubview(loginButton)
         
         orLabel = UILabel()
@@ -120,7 +121,10 @@ class LoginViewController: UIViewController {
             signUpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
-
+    @objc func loginPressed(sender: AnyObject){
+        let profilePicViewController = ProfileSelectionViewController()
+        self.navigationController?.pushViewController(profilePicViewController, animated: true)
+    }
 
 }
 
