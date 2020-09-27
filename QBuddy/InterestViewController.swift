@@ -73,24 +73,43 @@ class InterestViewController: UIViewController {
         activityField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(activityField)
         
+        classesField = UITextField()
+        classesField.placeholder = "What classes are you taking this semester?"
+        classesField.backgroundColor = .white
+        classesField.clearsOnBeginEditing = true
+        classesField.borderStyle = .roundedRect
+        classesField.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(classesField)
+        
+        personalityField = UITextField()
+        personalityField.placeholder = "What's your 16 personality type?"
+        personalityField.backgroundColor = .white
+        personalityField.clearsOnBeginEditing = true
+        personalityField.borderStyle = .roundedRect
+        personalityField.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(personalityField)
+        
         //Choices
         interestButton = UIButton()
         interestButton.setTitle("Same Interest", for:.normal)
         interestButton.setTitleColor(.white, for: .normal)
+        interestButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
         interestButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(interestButton)
         
         yearButton = UIButton()
         yearButton.setTitle("Same Year", for:.normal)
         yearButton.setTitleColor(.white, for: .normal)
+        yearButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
         yearButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(yearButton)
         
         majorButton = UIButton()
         majorButton.setTitle("Major", for:.normal)
         majorButton.setTitleColor(.white, for: .normal)
+        majorButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
         majorButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(majorButton)
+//        view.addSubview(majorButton)
         
         hobbyButton = UIButton()
         hobbyButton.setTitle("Same Hobby", for:.normal)
@@ -112,7 +131,7 @@ class InterestViewController: UIViewController {
     func setupConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32),
-            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            titleLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32),
             ])
         NSLayoutConstraint.activate([
             nameField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
@@ -133,24 +152,44 @@ class InterestViewController: UIViewController {
             activityField.heightAnchor.constraint(equalToConstant: 36)
             ])
         NSLayoutConstraint.activate([
-            subLabel.topAnchor.constraint(equalTo: activityField.bottomAnchor, constant: 32),
-            subLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            classesField.topAnchor.constraint(equalTo: activityField.bottomAnchor, constant: 16),
+            classesField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 36),
+            classesField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -36),
+            classesField.heightAnchor.constraint(equalToConstant: 36)
+            ])
+        NSLayoutConstraint.activate([
+            personalityField.topAnchor.constraint(equalTo: classesField.bottomAnchor, constant: 16),
+            personalityField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 36),
+            personalityField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -36),
+            personalityField.heightAnchor.constraint(equalToConstant: 36)
+            ])
+        NSLayoutConstraint.activate([
+            subLabel.topAnchor.constraint(equalTo: personalityField.bottomAnchor, constant: 32),
+            subLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32),
             ])
         NSLayoutConstraint.activate([
             interestButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
-            interestButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 52)
+            interestButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+            interestButton.heightAnchor.constraint(equalToConstant: 34),
+            interestButton.widthAnchor.constraint(equalToConstant: 64)
             ])
         NSLayoutConstraint.activate([
             yearButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
-            yearButton.leftAnchor.constraint(equalTo: interestButton.rightAnchor, constant: 32)
+            yearButton.leftAnchor.constraint(equalTo: interestButton.rightAnchor, constant: 32),
+            yearButton.heightAnchor.constraint(equalToConstant: 34),
+            yearButton.widthAnchor.constraint(equalToConstant: 64)
             ])
         NSLayoutConstraint.activate([
             interestButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
-            interestButton.leftAnchor.constraint(equalTo: yearButton.rightAnchor, constant: 32)
+            interestButton.leftAnchor.constraint(equalTo: yearButton.rightAnchor, constant: 32),
+            interestButton.heightAnchor.constraint(equalToConstant: 34),
+            interestButton.widthAnchor.constraint(equalToConstant: 64)
             ])
         NSLayoutConstraint.activate([
             meetButton.topAnchor.constraint(equalTo: interestButton.bottomAnchor, constant: 52),
-            meetButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            meetButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            meetButton.heightAnchor.constraint(equalToConstant: 36),
+            meetButton.widthAnchor.constraint(equalToConstant: 82)
             ])
         
     }
