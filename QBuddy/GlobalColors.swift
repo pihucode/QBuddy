@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    //Main colors
     class func darkBlueColor() -> UIColor {
         return UIColor(red:115/255, green:125/255, blue:254/255, alpha: 1.0)
     }
@@ -25,4 +26,23 @@ extension UIColor {
     class func beigeColor() -> UIColor {
         return UIColor(red:255/255, green:234/255, blue:219/255, alpha:1.0)
     }
+    
+    class func mainGrayColor() -> UIColor {
+        return UIColor(red:158/255, green:159/255, blue:173/255, alpha:1.0)
+    }
+    
+    //Grayscale
+    
+    // #FAFAFA
+    class func lightGrayColor() -> UIColor {
+        return UIColor(red:250/255, green:250/255, blue:250/255, alpha:1.0)
+    }
+    
+    //Other colors
+    
+    // #C4C4C4
+    class func buttonChoiceColor() -> UIColor {
+        return UIColor(red:196/255, green:196/255, blue:196/255, alpha:1.0)
+    }
+    
 }
