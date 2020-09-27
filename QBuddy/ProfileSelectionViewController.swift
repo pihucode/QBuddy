@@ -27,12 +27,6 @@ class ProfileSelectionViewController: UIViewController{
             make.height.equalTo(85)
             make.width.equalTo(290)
         }
-        buttonsCollection.snp.makeConstraints{(make) in
-            make.left.equalTo(self.view).offset(37)
-            make.right.equalTo(self.view).offset(-173)
-            make.height.equalTo(545)
-            make.width.equalTo(301)
-        }
         let tomNook = UIButton(type: .custom)
         tomNook.setImage(UIImage(named:"Tom Nook.png"), for: .normal)
         let blathers = UIButton(type: .custom)
