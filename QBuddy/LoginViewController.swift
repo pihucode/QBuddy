@@ -44,23 +44,23 @@ class LoginViewController: UIViewController {
         emailField = UITextField()
         emailField.placeholder = "Email"
         emailField.backgroundColor = .white
-        emailField.clearsOnBeginEditing = false
+        emailField.clearsOnBeginEditing = true
         emailField.borderStyle = .roundedRect
-        emailField.frame.size.width = 300
+        emailField.textAlignment = .left
         emailField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(emailField)
         
         passwordField = UITextField()
         passwordField.placeholder = "Password"
         passwordField.backgroundColor = .white
-        passwordField.clearsOnBeginEditing = false
+        passwordField.clearsOnBeginEditing = true
         passwordField.borderStyle = .roundedRect
-        passwordField.frame.size.width = 300
+        passwordField.textAlignment = .left
         passwordField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(passwordField)
         
         loginButton = UIButton()
-//        loginButton.setTitle("Login", for:.normal)
+        loginButton.setTitle("Login", for:.normal)
         loginButton.titleLabel?.font = UIFont(name: "Roboto", size: 16)
         loginButton.setTitleColor(UIColor.lightGrayColor(), for: .normal)
         loginButton.layer.backgroundColor = UIColor.darkBlueColor().cgColor
@@ -90,27 +90,33 @@ class LoginViewController: UIViewController {
             logoLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32)
             ])
         NSLayoutConstraint.activate([
-            loginLabel.topAnchor.constraint(equalTo: logoLabel.bottomAnchor, constant: 128),
+            loginLabel.topAnchor.constraint(equalTo: logoLabel.bottomAnchor, constant: 96),
             loginLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
         NSLayoutConstraint.activate([
             emailField.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 24),
-            emailField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            emailField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+            emailField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -52),
+            emailField.heightAnchor.constraint(equalToConstant: 36)
             ])
         NSLayoutConstraint.activate([
             passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 16),
-            passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            passwordField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+            passwordField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -52),
+            passwordField.heightAnchor.constraint(equalToConstant: 36)
             ])
         NSLayoutConstraint.activate([
-            loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 128),
-            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 64),
+            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loginButton.heightAnchor.constraint(equalToConstant: 36),
+            loginButton.widthAnchor.constraint(equalToConstant: 82)
             ])
         NSLayoutConstraint.activate([
-            orLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 52),
+            orLabel.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 48),
             orLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
         NSLayoutConstraint.activate([
-            signUpLabel.bottomAnchor.constraint(equalTo: orLabel.bottomAnchor, constant: 52),
+            signUpLabel.bottomAnchor.constraint(equalTo: orLabel.bottomAnchor, constant: 32),
             signUpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
