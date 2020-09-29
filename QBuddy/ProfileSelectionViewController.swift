@@ -188,6 +188,7 @@ class ProfileSelectionViewController: UIViewController{
     }
     
     @objc func profileSelectPressed(sender: AnyObject){
-        
+        let homeVC = HomeViewController()
+        self.navigationController?.pushViewController(homeVC, animated: true)
     }
 }
