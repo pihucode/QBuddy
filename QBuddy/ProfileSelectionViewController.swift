@@ -45,13 +45,25 @@ class ProfileSelectionViewController: UIViewController{
         moneyBag.setImage(UIImage(named:"Money bag.png"), for: .normal)
         let kkSlider = UIButton(type: .custom)
         kkSlider.setImage(UIImage(named:"KK Slider.png"), for: .normal)
-        let buttonsArray: [UIButton] = [tomNook, blathers, isabelle, peach, pear, redd, moneyBag, kkSlider]
+        let tomNookEllipse = UIButton(type: .custom)
+        tomNookEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let blathersEllipse = UIButton(type: .custom)
+        blathersEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let isabelleEllipse = UIButton(type: .custom)
+        isabelleEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let peachEllipse = UIButton(type: .custom)
+        peachEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let pearEllipse = UIButton(type: .custom)
+        pearEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let reddEllipse = UIButton(type: .custom)
+        reddEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let moneyBagEllipse = UIButton(type: .custom)
+        moneyBagEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let kkSliderEllipse = UIButton(type: .custom)
+        kkSliderEllipse.setImage(UIImage(named:"Ellipse.png"), for: .normal)
+        let buttonsArray: [UIButton] = [tomNookEllipse, blathersEllipse, isabelleEllipse, peachEllipse, pearEllipse, reddEllipse, moneyBagEllipse, kkSliderEllipse, tomNook, blathers, isabelle, peach, pear, redd, moneyBag, kkSlider]
         for button in buttonsArray{
             self.view.addSubview(button)
-            button.snp.makeConstraints{(make) in
-                make.height.equalTo(85)
-                make.width.equalTo(85)
-            }
             button.layer.cornerRadius = 0.5 * tomNook.bounds.size.width
             button.clipsToBounds = true
             button.addTarget(self, action: #selector(profileSelectPressed), for: .touchUpInside)
@@ -60,47 +72,114 @@ class ProfileSelectionViewController: UIViewController{
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
                     make.top.equalTo(self.view).offset(175)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
                 }
-                break
+            case tomNookEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.left.equalTo(self.view).offset(37)
+                    make.top.equalTo(self.view).offset(160)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             case blathers:
-            button.snp.makeConstraints{(make) in
-                make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(175)
-            }
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-52)
+                    make.top.equalTo(self.view).offset(175)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
+                }
+            case blathersEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-37)
+                    make.top.equalTo(self.view).offset(160)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             case isabelle:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
                     make.top.equalTo(self.view).offset(323)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
                 }
-                break
-            case peach:
-            button.snp.makeConstraints{(make) in
-                make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(323)
-            }
-            case pear:
+            case isabelleEllipse:
                 button.snp.makeConstraints{(make) in
+                    make.left.equalTo(self.view).offset(37)
+                    make.top.equalTo(self.view).offset(313)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
+            case peach:
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-52)
+                    make.top.equalTo(self.view).offset(323)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
+                }
+            case peachEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-37)
+                    make.top.equalTo(self.view).offset(313)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
+            case pear:
+               button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
                     make.top.equalTo(self.view).offset(466)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
                 }
-                break
+            case pearEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.left.equalTo(self.view).offset(37)
+                    make.top.equalTo(self.view).offset(457)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             case redd:
-            button.snp.makeConstraints{(make) in
-                make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(466)
-            }
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-52)
+                    make.top.equalTo(self.view).offset(466)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
+                }
+            case reddEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-37)
+                    make.top.equalTo(self.view).offset(457)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             case moneyBag:
                 button.snp.makeConstraints{(make) in
                     make.left.equalTo(self.view).offset(52)
                     make.top.equalTo(self.view).offset(613)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
                 }
-                break
+            case moneyBagEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.left.equalTo(self.view).offset(37)
+                    make.top.equalTo(self.view).offset(602)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             case kkSlider:
-            button.snp.makeConstraints{(make) in
-                make.right.equalTo(self.view).offset(-52)
-                make.top.equalTo(self.view).offset(613)
-            }
-            break
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-52)
+                    make.top.equalTo(self.view).offset(613)
+                    make.height.equalTo(85)
+                    make.width.equalTo(85)
+                }
+            case kkSliderEllipse:
+                button.snp.makeConstraints{(make) in
+                    make.right.equalTo(self.view).offset(-37)
+                    make.top.equalTo(self.view).offset(602)
+                    make.height.equalTo(106)
+                    make.width.equalTo(114)
+                }
             default:
                 break
             }
