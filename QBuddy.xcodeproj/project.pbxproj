@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		18D0A67E251FCECC00D0A079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0A67C251FCECC00D0A079 /* LaunchScreen.storyboard */; };
 		18D0A689251FCECD00D0A079 /* QBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A688251FCECD00D0A079 /* QBuddyTests.swift */; };
 		18D0A694251FCECD00D0A079 /* QBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0A693251FCECD00D0A079 /* QBuddyUITests.swift */; };
+		354EAAEF68F44A812D3BBCD4 /* Pods_QBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85723B782818830199578220 /* Pods_QBuddy.framework */; };
+		42F863A6573A54C5D43FFE89 /* Pods_QBuddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C390C33E7BFCC50EC2BA10A0 /* Pods_QBuddyTests.framework */; };
+		62981F77729FC93E6AD19058 /* Pods_QBuddy_QBuddyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */; };
+		66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */; };
+		66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB9632522FDA6007C19BF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE59F850F67D55ED516D2F0 /* Pods-QBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddy.release.xcconfig"; path = "Target Support Files/Pods-QBuddy/Pods-QBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		0D953FB0D5B4566E15FB66B1 /* Pods-QBuddy-QBuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddy-QBuddyUITests.release.xcconfig"; path = "Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		18CE0F9925201B2C007A1EEE /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalColors.swift; sourceTree = "<group>"; };
 		18D0A670251FCE8B00D0A079 /* QBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +56,15 @@
 		18D0A68F251FCECD00D0A079 /* QBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0A693251FCECD00D0A079 /* QBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBuddyUITests.swift; sourceTree = "<group>"; };
 		18D0A695251FCECD00D0A079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23439F4C8E8AFF4FF73E68A3 /* Pods-QBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddyTests.release.xcconfig"; path = "Target Support Files/Pods-QBuddyTests/Pods-QBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C88814F40AC79C9A8A24A1B /* Pods-QBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddy.debug.xcconfig"; path = "Target Support Files/Pods-QBuddy/Pods-QBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		5DAFA67637154CDDCA9D8272 /* Pods-QBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddyTests.debug.xcconfig"; path = "Target Support Files/Pods-QBuddyTests/Pods-QBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionViewController.swift; sourceTree = "<group>"; };
+		66DEB9632522FDA6007C19BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		85723B782818830199578220 /* Pods_QBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE43CBF06E6DE22C241906F /* Pods-QBuddy-QBuddyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddy-QBuddyUITests.debug.xcconfig"; path = "Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddy_QBuddyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C390C33E7BFCC50EC2BA10A0 /* Pods_QBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354EAAEF68F44A812D3BBCD4 /* Pods_QBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F863A6573A54C5D43FFE89 /* Pods_QBuddyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62981F77729FC93E6AD19058 /* Pods_QBuddy_QBuddyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				18D0A687251FCECD00D0A079 /* QBuddyTests */,
 				18D0A692251FCECD00D0A079 /* QBuddyUITests */,
 				18D0A671251FCE8B00D0A079 /* Products */,
+				AD76ADB266642415970AC3CD /* Pods */,
+				342462B756AB3CA2A515B49A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +126,8 @@
 				18D0A67C251FCECC00D0A079 /* LaunchScreen.storyboard */,
 				18D0A67F251FCECC00D0A079 /* Info.plist */,
 				18CE0F9925201B2C007A1EEE /* InterestViewController.swift */,
+				66DEB9632522FDA6007C19BF /* HomeViewController.swift */,
+				66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */,
 				18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */,
 			);
 			path = QBuddy;
@@ -128,6 +151,29 @@
 			path = QBuddyUITests;
 			sourceTree = "<group>";
 		};
+		342462B756AB3CA2A515B49A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85723B782818830199578220 /* Pods_QBuddy.framework */,
+				ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */,
+				C390C33E7BFCC50EC2BA10A0 /* Pods_QBuddyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD76ADB266642415970AC3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C88814F40AC79C9A8A24A1B /* Pods-QBuddy.debug.xcconfig */,
+				0AE59F850F67D55ED516D2F0 /* Pods-QBuddy.release.xcconfig */,
+				8AE43CBF06E6DE22C241906F /* Pods-QBuddy-QBuddyUITests.debug.xcconfig */,
+				0D953FB0D5B4566E15FB66B1 /* Pods-QBuddy-QBuddyUITests.release.xcconfig */,
+				5DAFA67637154CDDCA9D8272 /* Pods-QBuddyTests.debug.xcconfig */,
+				23439F4C8E8AFF4FF73E68A3 /* Pods-QBuddyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D0A698251FCECD00D0A079 /* Build configuration list for PBXNativeTarget "QBuddy" */;
 			buildPhases = (
+				3641E3FEDE2C9AF7EB8E6114 /* [CP] Check Pods Manifest.lock */,
 				18D0A66C251FCE8B00D0A079 /* Sources */,
 				18D0A66D251FCE8B00D0A079 /* Frameworks */,
 				18D0A66E251FCE8B00D0A079 /* Resources */,
+				AD19271FCB4AA1A8A843570A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D0A69B251FCECD00D0A079 /* Build configuration list for PBXNativeTarget "QBuddyTests" */;
 			buildPhases = (
+				5094C077E37D3471A6E77146 /* [CP] Check Pods Manifest.lock */,
 				18D0A680251FCECD00D0A079 /* Sources */,
 				18D0A681251FCECD00D0A079 /* Frameworks */,
 				18D0A682251FCECD00D0A079 /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D0A69E251FCECD00D0A079 /* Build configuration list for PBXNativeTarget "QBuddyUITests" */;
 			buildPhases = (
+				0C11E2E27745A20006F0DA23 /* [CP] Check Pods Manifest.lock */,
 				18D0A68B251FCECD00D0A079 /* Sources */,
 				18D0A68C251FCECD00D0A079 /* Frameworks */,
 				18D0A68D251FCECD00D0A079 /* Resources */,
+				301949F145438BD0C0BEA79C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +304,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C11E2E27745A20006F0DA23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBuddy-QBuddyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		301949F145438BD0C0BEA79C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3641E3FEDE2C9AF7EB8E6114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5094C077E37D3471A6E77146 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBuddyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD19271FCB4AA1A8A843570A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBuddy/Pods-QBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBuddy/Pods-QBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QBuddy/Pods-QBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D0A66C251FCE8B00D0A079 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18CE0F9C25201FAF007A1EEE /* GlobalColors.swift in Sources */,
+				66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */,
 				18CE0F9A25201B2C007A1EEE /* InterestViewController.swift in Sources */,
 				18D0A676251FCE8B00D0A079 /* LoginViewController.swift in Sources */,
+				66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */,
 				18D0A674251FCE8B00D0A079 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +582,7 @@
 		};
 		18D0A699251FCECD00D0A079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C88814F40AC79C9A8A24A1B /* Pods-QBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,6 +601,7 @@
 		};
 		18D0A69A251FCECD00D0A079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE59F850F67D55ED516D2F0 /* Pods-QBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +620,7 @@
 		};
 		18D0A69C251FCECD00D0A079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAFA67637154CDDCA9D8272 /* Pods-QBuddyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +642,7 @@
 		};
 		18D0A69D251FCECD00D0A079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23439F4C8E8AFF4FF73E68A3 /* Pods-QBuddyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +664,7 @@
 		};
 		18D0A69F251FCECD00D0A079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE43CBF06E6DE22C241906F /* Pods-QBuddy-QBuddyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +685,7 @@
 		};
 		18D0A6A0251FCECD00D0A079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D953FB0D5B4566E15FB66B1 /* Pods-QBuddy-QBuddyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
