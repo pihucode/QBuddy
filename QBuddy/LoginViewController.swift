@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
         logoLabel.text = "QBuddy"
         logoLabel.textColor = UIColor.darkBlueColor()
         logoLabel.font = UIFont(name: "Roboto", size: 30)
+        logoLabel.font = UIFont.boldSystemFont(ofSize: 30)
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoLabel)
         
@@ -38,6 +39,7 @@ class LoginViewController: UIViewController {
         loginLabel.text = "Login"
         loginLabel.textColor = UIColor.mainGrayColor()
         loginLabel.font = UIFont(name: "Roboto", size: 24)
+        loginLabel.font = UIFont.boldSystemFont(ofSize: 24)
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginLabel)
         
