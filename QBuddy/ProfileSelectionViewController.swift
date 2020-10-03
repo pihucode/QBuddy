@@ -20,8 +20,7 @@ class ProfileSelectionViewController: UIViewController{
         titleLabel.text = "Choose your profile picture here!"
         titleLabel.numberOfLines = 0
         titleLabel.textColor = UIColor.darkBlueColor()
-        titleLabel.font = UIFont(name: "Roboto", size: 30)
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        titleLabel.font = UIFont(name: "Roboto-Bold", size: 30)
         self.view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints{(make) in
             make.left.equalTo(self.view).offset(22)
@@ -188,7 +187,7 @@ class ProfileSelectionViewController: UIViewController{
     }
     
     @objc func profileSelectPressed(sender: AnyObject){
-        let homeVC = HomeViewController()
+        let homeVC = HomeTabBarController()
         self.navigationController?.pushViewController(homeVC, animated: true)
     }
 }

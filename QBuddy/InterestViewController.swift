@@ -37,14 +37,14 @@ class InterestViewController: UIViewController {
         titleLabel = UILabel()
         titleLabel.text = "About yourself..."
         titleLabel.textColor = UIColor.darkBlueColor()
-        titleLabel.font = UIFont(name: "Roboto", size: 30)
+        titleLabel.font = UIFont(name: "Roboto-Medium", size: 30)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(titleLabel)
 
         subLabel = UILabel()
         subLabel.text = "Who do you prefer to pair with?"
         subLabel.textColor = UIColor.darkBlueColor()
-        subLabel.font = UIFont(name: "Roboto", size: 24)
+        subLabel.font = UIFont(name: "Roboto-Medium", size: 24)
         subLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(subLabel)
         
@@ -91,6 +91,8 @@ class InterestViewController: UIViewController {
         
         //Choices
         interestButton = UIButton()
+        interestButton.titleLabel?.numberOfLines = 0
+        interestButton.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 10)
         interestButton.setTitle("Same Interest", for:.normal)
         interestButton.setTitleColor(.white, for: .normal)
         interestButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
@@ -98,6 +100,8 @@ class InterestViewController: UIViewController {
         view.addSubview(interestButton)
         
         yearButton = UIButton()
+        yearButton.titleLabel?.numberOfLines = 0
+        yearButton.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 10)
         yearButton.setTitle("Same Year", for:.normal)
         yearButton.setTitleColor(.white, for: .normal)
         yearButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
@@ -105,18 +109,22 @@ class InterestViewController: UIViewController {
         view.addSubview(yearButton)
         
         majorButton = UIButton()
+        majorButton.titleLabel?.numberOfLines = 0
+        majorButton.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 10)
         majorButton.setTitle("Major", for:.normal)
         majorButton.setTitleColor(.white, for: .normal)
         majorButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
         majorButton.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(majorButton)
+        view.addSubview(majorButton)
         
         hobbyButton = UIButton()
+        hobbyButton.titleLabel?.numberOfLines = 0
+        hobbyButton.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 10)
         hobbyButton.setTitle("Same Hobby", for:.normal)
         hobbyButton.setTitleColor(.white, for: .normal)
         hobbyButton.layer.backgroundColor = UIColor.buttonChoiceColor().cgColor
         hobbyButton.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(hobbyButton)
+        view.addSubview(hobbyButton)
         
         meetButton = UIButton()
         meetButton.setTitle("Meet", for:.normal)
@@ -172,19 +180,25 @@ class InterestViewController: UIViewController {
             interestButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
             interestButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
             interestButton.heightAnchor.constraint(equalToConstant: 34),
-            interestButton.widthAnchor.constraint(equalToConstant: 64)
+            interestButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
             yearButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
             yearButton.leftAnchor.constraint(equalTo: interestButton.rightAnchor, constant: 32),
             yearButton.heightAnchor.constraint(equalToConstant: 34),
-            yearButton.widthAnchor.constraint(equalToConstant: 64)
+            yearButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
-            interestButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
-            interestButton.leftAnchor.constraint(equalTo: yearButton.rightAnchor, constant: 32),
-            interestButton.heightAnchor.constraint(equalToConstant: 34),
-            interestButton.widthAnchor.constraint(equalToConstant: 64)
+            majorButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
+            majorButton.leftAnchor.constraint(equalTo: yearButton.rightAnchor, constant: 32),
+            majorButton.heightAnchor.constraint(equalToConstant: 34),
+            majorButton.widthAnchor.constraint(equalToConstant: 70)
+            ])
+        NSLayoutConstraint.activate([
+            hobbyButton.topAnchor.constraint(equalTo: interestButton.bottomAnchor, constant: 16),
+            hobbyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+            hobbyButton.heightAnchor.constraint(equalToConstant: 34),
+            hobbyButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
             meetButton.topAnchor.constraint(equalTo: interestButton.bottomAnchor, constant: 52),

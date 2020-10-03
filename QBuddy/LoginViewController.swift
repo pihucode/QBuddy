@@ -27,19 +27,16 @@ class LoginViewController: UIViewController {
         logoLabel = UILabel()
         logoLabel.text = "QBuddy"
         logoLabel.textColor = UIColor.darkBlueColor()
-        logoLabel.font = UIFont(name: "Roboto", size: 30)
-        logoLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        logoLabel.font = UIFont(name: "Roboto-Bold", size: 30)
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoLabel)
-        
 //        logoImageView = UIImageView()
 //        view.addSubview(logoImageView)
         
         loginLabel = UILabel()
         loginLabel.text = "Login"
         loginLabel.textColor = UIColor.mainGrayColor()
-        loginLabel.font = UIFont(name: "Roboto", size: 24)
-        loginLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        loginLabel.font = UIFont(name: "Roboto-Bold", size: 24)
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loginLabel)
         
@@ -63,7 +60,7 @@ class LoginViewController: UIViewController {
         
         loginButton = UIButton()
         loginButton.setTitle("Login", for:.normal)
-        loginButton.titleLabel?.font = UIFont(name: "Roboto", size: 16)
+        loginButton.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 16)
         loginButton.setTitleColor(UIColor.lightGrayColor(), for: .normal)
         loginButton.layer.backgroundColor = UIColor.darkBlueColor().cgColor
         loginButton.translatesAutoresizingMaskIntoConstraints = false
@@ -73,14 +70,14 @@ class LoginViewController: UIViewController {
         orLabel = UILabel()
         orLabel.text = "OR"
         orLabel.textColor = UIColor.mainGrayColor()
-        orLabel.font = UIFont(name: "Roboto", size: 14)
+        orLabel.font = UIFont(name: "Roboto-Medium", size: 14)
         orLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(orLabel)
         
         signUpLabel = UILabel()
         signUpLabel.text = "sign up"
         signUpLabel.textColor = UIColor.mainGrayColor()
-        signUpLabel.font = UIFont(name: "Roboto", size: 14)
+        signUpLabel.font = UIFont(name: "Roboto-Medium", size: 14)
         signUpLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(signUpLabel)
         
@@ -90,7 +87,7 @@ class LoginViewController: UIViewController {
     func setupConstraints() {
         NSLayoutConstraint.activate([
             logoLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32),
-            logoLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32)
+            logoLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 0)
             ])
         NSLayoutConstraint.activate([
             loginLabel.topAnchor.constraint(equalTo: logoLabel.bottomAnchor, constant: 96),

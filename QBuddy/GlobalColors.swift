@@ -31,6 +31,10 @@ extension UIColor {
         return UIColor(red:158/255, green:159/255, blue:173/255, alpha:1.0)
     }
     
+    class func navyBlueColor() -> UIColor {
+        return UIColor(red:46/255, green:58/255, blue:59/255, alpha:1.0)
+    }
+    
     //Grayscale
     
     // #FAFAFA

@@ -7,16 +7,17 @@
 //
 
 import Foundation
-
+import UIKit
 struct Person {
-    var image: UIImage;
+    var profilePic: String;
     var interests: String;
     var major: String;
     var year: Int;
+    var name = ""
 }
 
 class PersonCell: UITableViewCell {
-    var image = UIButton(type: .custom)
+    var profilePic = UIImageView()
     var interestsLabel = UILabel()
     var majorLabel = UILabel()
     var yearLabel = UILabel()
@@ -33,10 +34,10 @@ class PersonDatasource: NSObject, UITableViewDataSource {
         let person = people[indexPath.row]
         
         let cell = PersonCell()
-        cell.image.setImage(person.image, for: .normal)
+        cell.profilePic.image = UIImage(named: person.profilePic)
         cell.interestsLabel.text = "Interests: " + person.interests
         cell.majorLabel.text = "Major: " + person.major
-        cell.yearLabel.text = "Graduating Year: " + person.year
+        cell.yearLabel.text = "Graduating Year: " + String(person.year)
         return cell
     }
 }

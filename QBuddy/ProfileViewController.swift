@@ -1,20 +1,19 @@
 //
-//  File.swift
+//  ProfileViewController.swift
 //  QBuddy
 //
-//  Created by Kinjal Jasani on 9/29/20.
+//  Created by Kinjal Jasani on 10/3/20.
 //  Copyright © 2020 DTI. All rights reserved.
 //
 
 import Foundation
 import UIKit
 import SnapKit
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var titleLabel = UILabel()
-    var activeLabel = UILabel()
-    var activeTableView = UITableView()
-    var randomMatchButton = UIButton()
+    var friendsLabel = UILabel()
+    var friendsTableView = UITableView()
     var locator = UIButton()
     var people = [Person]()
     override func viewDidLoad() {
@@ -23,7 +22,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
            people.append(Person(profilePic: "Blathers.png", interests: "Photography, PubG", major: "Information Science", year: 2022, name: ""))
            people.append(Person(profilePic: "Isabelle.png", interests: "Photography, PubG", major: "Information Science", year: 2022, name: ""))
            people.append(Person(profilePic: "Peach.png", interests: "Photography, PubG", major: "Information Science", year: 2022, name: ""))
-          activeTableView.register(FriendCell.self, forCellReuseIdentifier: NSStringFromClass(FriendCell.self))
+           people.append(Person(profilePic: "Tom Nook.png", interests: "Photography, PubG", major: "Information Science", year: 2022, name: ""))
+           people.append(Person(profilePic: "Blathers.png", interests: "Photography, PubG", major: "Information Science", year: 2022, name: ""))
+          friendsTableView.register(FriendCell.self, forCellReuseIdentifier: NSStringFromClass(FriendCell.self))
            setUpSubviews()
     }
     func setUpSubviews(){
@@ -47,37 +48,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 make.height.equalTo(15)
                 make.width.equalTo(15)
         }
-        randomMatchButton.backgroundColor = UIColor.redColor()
-        randomMatchButton.setTitle("Random Match", for: .normal)
-        self.view.addSubview(randomMatchButton)
-        randomMatchButton.snp.makeConstraints{(make) in
-                make.centerX.equalTo(self.view)
-                make.top.equalTo(self.view).offset(156)
-                make.height.equalTo(56)
-                make.width.equalTo(321)
-        }
-        activeLabel.text = "Active"
-        activeLabel.numberOfLines = 0
-        activeLabel.textColor = UIColor.darkBlueColor()
-        activeLabel.font = UIFont(name: "Roboto-Bold", size: 30)
-        self.view.addSubview(activeLabel)
-        activeLabel.snp.makeConstraints{(make) in
+        friendsLabel.text = "Friends"
+        friendsLabel.numberOfLines = 0
+        friendsLabel.textColor = UIColor.darkBlueColor()
+        friendsLabel.font = UIFont(name: "Roboto-Bold", size: 30)
+        self.view.addSubview(friendsLabel)
+        friendsLabel.snp.makeConstraints{(make) in
             make.left.equalTo(self.view).offset(28)
-            make.top.equalTo(randomMatchButton.snp_bottom).offset(40)
+            make.top.equalTo(self.view).offset(111)
             make.height.equalTo(39)
             make.width.equalTo(262)
         }
-        self.view.addSubview(activeTableView)
-        activeTableView.snp.makeConstraints{(make) in
+        self.view.addSubview(friendsTableView)
+        friendsTableView.snp.makeConstraints{(make) in
             make.left.equalTo(self.view).offset(28)
-            make.top.equalTo(activeLabel.snp_bottom).offset(40)
-            make.height.equalTo(357)
+            make.top.equalTo(friendsLabel.snp_bottom).offset(14)
+            make.height.equalTo(537)
             make.width.equalTo(320)
         }
-        activeTableView.delegate = self
-        activeTableView.dataSource = self
-        activeTableView.backgroundColor = UIColor.beigeColor()
-        activeTableView.separatorColor = UIColor.beigeColor()
+        friendsTableView.delegate = self
+        friendsTableView.dataSource = self
+        friendsTableView.backgroundColor = UIColor.beigeColor()
+        friendsTableView.separatorColor = UIColor.beigeColor()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
