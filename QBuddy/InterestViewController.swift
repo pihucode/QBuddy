@@ -123,6 +123,7 @@ class InterestViewController: UIViewController {
         meetButton.setTitleColor(UIColor.lightGrayColor(), for: .normal)
         meetButton.layer.backgroundColor = UIColor.redColor().cgColor
         meetButton.translatesAutoresizingMaskIntoConstraints = false
+        meetButton.addTarget(self, action: #selector(meetPressed), for: .touchUpInside)
         view.addSubview(meetButton)
         
         setupConstraints()
@@ -194,6 +195,9 @@ class InterestViewController: UIViewController {
         
     }
     
-    
+    @objc func meetPressed(sender: AnyObject){
+        let profilePicViewController = ProfileSelectionViewController()
+        self.navigationController?.pushViewController(profilePicViewController, animated: true)
+    }
 }
 

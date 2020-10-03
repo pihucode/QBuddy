@@ -124,8 +124,8 @@ class LoginViewController: UIViewController {
             ])
     }
     @objc func loginPressed(sender: AnyObject){
-        let profilePicViewController = ProfileSelectionViewController()
-        self.navigationController?.pushViewController(profilePicViewController, animated: true)
+        let interestViewController = InterestViewController()
+        self.navigationController?.pushViewController(interestViewController, animated: true)
     }
 
 }
