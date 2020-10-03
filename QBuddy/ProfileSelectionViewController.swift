@@ -64,7 +64,7 @@ class ProfileSelectionViewController: UIViewController{
         let buttonsArray: [UIButton] = [tomNookEllipse, blathersEllipse, isabelleEllipse, peachEllipse, pearEllipse, reddEllipse, moneyBagEllipse, kkSliderEllipse, tomNook, blathers, isabelle, peach, pear, redd, moneyBag, kkSlider]
         for button in buttonsArray{
             self.view.addSubview(button)
-            button.layer.cornerRadius = 0.5 * tomNook.bounds.size.width
+            button.layer.cornerRadius = 0.5 * button.bounds.size.width
             button.clipsToBounds = true
             button.addTarget(self, action: #selector(profileSelectPressed), for: .touchUpInside)
             switch button{
