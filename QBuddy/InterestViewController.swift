@@ -189,19 +189,19 @@ class InterestViewController: UIViewController {
             yearButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
-            majorButton.topAnchor.constraint(equalTo: subLabel.bottomAnchor, constant: 16),
-            majorButton.leftAnchor.constraint(equalTo: yearButton.rightAnchor, constant: 32),
+            majorButton.topAnchor.constraint(equalTo: yearButton.bottomAnchor, constant: 16),
+            majorButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
             majorButton.heightAnchor.constraint(equalToConstant: 34),
             majorButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
-            hobbyButton.topAnchor.constraint(equalTo: interestButton.bottomAnchor, constant: 16),
-            hobbyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 52),
+            hobbyButton.topAnchor.constraint(equalTo: yearButton.bottomAnchor, constant: 16),
+            hobbyButton.leftAnchor.constraint(equalTo: majorButton.rightAnchor, constant: 32),
             hobbyButton.heightAnchor.constraint(equalToConstant: 34),
             hobbyButton.widthAnchor.constraint(equalToConstant: 70)
             ])
         NSLayoutConstraint.activate([
-            meetButton.topAnchor.constraint(equalTo: interestButton.bottomAnchor, constant: 52),
+            meetButton.topAnchor.constraint(equalTo: hobbyButton.bottomAnchor, constant: 52),
             meetButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             meetButton.heightAnchor.constraint(equalToConstant: 36),
             meetButton.widthAnchor.constraint(equalToConstant: 82)
