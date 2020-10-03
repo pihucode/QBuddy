@@ -15,7 +15,7 @@ class GameViewController: UIViewController{
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Game")
-        backgroundImage.contentMode = UIViewContentMode.scaleAspectfill
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
     }
 }

@@ -56,6 +56,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 make.height.equalTo(56)
                 make.width.equalTo(321)
         }
+         randomMatchButton.addTarget(self, action: #selector(matchPressed), for: .touchUpInside)
         activeLabel.text = "Active"
         activeLabel.numberOfLines = 0
         activeLabel.textColor = UIColor.darkBlueColor()
@@ -101,6 +102,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.selectionStyle = .none
         return cell
     }
-
+    @objc func matchPressed(sender: AnyObject){
+        let gameVC = GameViewController()
+        self.navigationController?.pushViewController(gameVC, animated: true)
+    }
         
 }
