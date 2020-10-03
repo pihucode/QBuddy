@@ -20,6 +20,8 @@
 		62981F77729FC93E6AD19058 /* Pods_QBuddy_QBuddyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */; };
 		66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */; };
 		66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB9632522FDA6007C19BF /* HomeViewController.swift */; };
+		EC08854525282B7B00F532C4 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08854425282B7B00F532C4 /* PersonCell.swift */; };
+		EC855352252817CD007166F8 /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC855351252817CD007166F8 /* GameHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		8AE43CBF06E6DE22C241906F /* Pods-QBuddy-QBuddyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBuddy-QBuddyUITests.debug.xcconfig"; path = "Target Support Files/Pods-QBuddy-QBuddyUITests/Pods-QBuddy-QBuddyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddy_QBuddyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C390C33E7BFCC50EC2BA10A0 /* Pods_QBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC08854425282B7B00F532C4 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		EC855351252817CD007166F8 /* GameHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				66DEB9632522FDA6007C19BF /* HomeViewController.swift */,
 				66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */,
 				18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */,
+				EC855351252817CD007166F8 /* GameHistoryViewController.swift */,
+				EC08854425282B7B00F532C4 /* PersonCell.swift */,
 			);
 			path = QBuddy;
 			sourceTree = "<group>";
@@ -414,10 +420,12 @@
 			files = (
 				18CE0F9C25201FAF007A1EEE /* GlobalColors.swift in Sources */,
 				66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */,
+				EC08854525282B7B00F532C4 /* PersonCell.swift in Sources */,
 				18CE0F9A25201B2C007A1EEE /* InterestViewController.swift in Sources */,
 				18D0A676251FCE8B00D0A079 /* LoginViewController.swift in Sources */,
 				66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */,
 				18D0A674251FCE8B00D0A079 /* AppDelegate.swift in Sources */,
+				EC855352252817CD007166F8 /* GameHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
