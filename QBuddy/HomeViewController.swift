@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     var titleLabel = UILabel()
     var activeLabel = UILabel()
     var activeTableView = UITableView()
@@ -66,12 +67,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 4
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
-        return UITableViewCell()
-    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 76
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
         
 }
