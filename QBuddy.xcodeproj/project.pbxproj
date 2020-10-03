@@ -21,6 +21,7 @@
 		66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */; };
 		66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DEB9632522FDA6007C19BF /* HomeViewController.swift */; };
 		EC08854525282B7B00F532C4 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08854425282B7B00F532C4 /* PersonCell.swift */; };
+		EC08854725283CC100F532C4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08854625283CC100F532C4 /* GameViewController.swift */; };
 		EC855352252817CD007166F8 /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC855351252817CD007166F8 /* GameHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		ACDDF9E50AA08A6C7C6AAAA7 /* Pods_QBuddy_QBuddyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddy_QBuddyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C390C33E7BFCC50EC2BA10A0 /* Pods_QBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC08854425282B7B00F532C4 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		EC08854625283CC100F532C4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EC855351252817CD007166F8 /* GameHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 				66DEB96125202796007C19BF /* ProfileSelectionViewController.swift */,
 				18CE0F9B25201FAF007A1EEE /* GlobalColors.swift */,
 				EC855351252817CD007166F8 /* GameHistoryViewController.swift */,
+				EC08854625283CC100F532C4 /* GameViewController.swift */,
 				EC08854425282B7B00F532C4 /* PersonCell.swift */,
 			);
 			path = QBuddy;
@@ -422,6 +425,7 @@
 				66DEB9642522FDA6007C19BF /* HomeViewController.swift in Sources */,
 				EC08854525282B7B00F532C4 /* PersonCell.swift in Sources */,
 				18CE0F9A25201B2C007A1EEE /* InterestViewController.swift in Sources */,
+				EC08854725283CC100F532C4 /* GameViewController.swift in Sources */,
 				18D0A676251FCE8B00D0A079 /* LoginViewController.swift in Sources */,
 				66DEB96225202796007C19BF /* ProfileSelectionViewController.swift in Sources */,
 				18D0A674251FCE8B00D0A079 /* AppDelegate.swift in Sources */,
